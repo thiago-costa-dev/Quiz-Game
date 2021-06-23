@@ -40,7 +40,9 @@ class Question {
 };
 
 function arrayQuestions() {
-    const question1 = new Question(
+    const questions = [];
+
+    questions.push(new Question(
         1,
         '2 + 2 = ?',
         1,
@@ -48,9 +50,9 @@ function arrayQuestions() {
         4,
         0,
         'c-03'
-    );
+    ));
 
-    const question2 = new Question(
+    questions.push(new Question(
         2,
         'Who discovered the America?',
         'Christopher Columbus',
@@ -58,9 +60,9 @@ function arrayQuestions() {
         'Isaac Newton',
         'Bjarni Herjolfsson',
         'c-04'
-    );
+    ));
 
-    const question3 = new Question(
+    questions.push(new Question(
         3,
         '5 * 3 = ?',
         10,
@@ -68,9 +70,9 @@ function arrayQuestions() {
         30,
         8,
         'c-02'
-    );
+    ));
 
-    return [question1, question2, question3];
+    return questions;
 };
 
 function wrongAnswer() {
